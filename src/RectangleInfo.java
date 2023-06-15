@@ -6,16 +6,16 @@ public class RectangleInfo {
         double width, height;
 
         do {
-            System.out.println("Please enter the width of the rectangle:");
+            System.out.println("Enter the width of the rectangle:");
             while (!scanner.hasNextDouble()) {
                 System.out.println("Invalid input. Please enter a number:");
                 scanner.next();
             }
             width = scanner.nextDouble();
 
-            System.out.println("Please enter the height of the rectangle:");
+            System.out.println("Enter the height of the rectangle:");
             while (!scanner.hasNextDouble()) {
-                System.out.println("Invalid input. Please enter a number:");
+                System.out.println("Invalid input. Enter a number:");
                 scanner.next();
             }
             height = scanner.nextDouble();
@@ -25,6 +25,7 @@ public class RectangleInfo {
         double perimeter = 2 * (width + height);
         double diagonal = Math.sqrt(width * width + height * height);
 
+        //output statements
         System.out.printf("The area of the rectangle is: %.2f%n", area);
         System.out.printf("The perimeter of the rectangle is: %.2f%n", perimeter);
         System.out.printf("The length of the diagonal of the rectangle is: %.2f%n", diagonal);
