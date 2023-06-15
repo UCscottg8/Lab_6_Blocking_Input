@@ -19,7 +19,6 @@ public class FuelCosts {
                 scanner.next();
             }
             fuelEfficiency = scanner.nextDouble();
-
             System.out.println("Enter the price of gas per gallon:");
             while (!scanner.hasNextDouble()) {
                 System.out.println("Invalid input. Enter a number:");
@@ -31,6 +30,7 @@ public class FuelCosts {
         double costPerHundredMiles = (100 / fuelEfficiency) * pricePerGallon;
         double distanceCarCanGo = numberOfGallons * fuelEfficiency;
 
+        //output statements
         System.out.printf("The cost per 100 miles is: $%.2f%n", costPerHundredMiles);
         System.out.printf("The car can go %.2f miles with the gas in the tank.%n", distanceCarCanGo);
     }
