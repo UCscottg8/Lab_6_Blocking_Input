@@ -17,6 +17,7 @@ public class HighorLow {
             userGuess = scanner.nextInt();
         } while (userGuess <= 0 || userGuess > 10);
 
+        // output statement
         System.out.println("The generated number was: " + randomNumber);
 
         if(userGuess < randomNumber) {
