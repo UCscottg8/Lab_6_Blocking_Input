@@ -21,6 +21,7 @@ public class MetricConverter {
         double feet = meters * 3.28084;
         double inches = meters * 39.3701;
 
+        //output statements
         System.out.printf("The measurement in miles is: %.5f%n", miles);
         System.out.printf("The measurement in feet is: %.2f%n", feet);
         System.out.printf("The measurement in inches is: %.2f%n", inches);
