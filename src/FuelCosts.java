@@ -8,21 +8,21 @@ public class FuelCosts {
         do {
             System.out.println("Enter the number of gallons of gas in the tank:");
             while (!scanner.hasNextDouble()) {
-                System.out.println("Invalid input. Enter a number:");
+                System.out.println("Invalid input.  Enter a number:");
                 scanner.next();
             }
             numberOfGallons = scanner.nextDouble();
 
             System.out.println("Enter the fuel efficiency in miles per gallon:");
             while (!scanner.hasNextDouble()) {
-                System.out.println("Invalid input. Enter a number:");
+                System.out.println("Invalid input.  Enter a number:");
                 scanner.next();
             }
             fuelEfficiency = scanner.nextDouble();
 
             System.out.println("Enter the price of gas per gallon:");
             while (!scanner.hasNextDouble()) {
-                System.out.println("Invalid input. Enter a number:");
+                System.out.println("Invalid input.  Enter a number:");
                 scanner.next();
             }
             pricePerGallon = scanner.nextDouble();
